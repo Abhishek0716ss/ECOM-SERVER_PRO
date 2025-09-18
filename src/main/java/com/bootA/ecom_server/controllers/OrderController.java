@@ -64,10 +64,11 @@ public class OrderController {
 
     
     @GetMapping("/user/{userId}")
-    public List<Order> getOrdersByUserId(@PathVariable String userId) {
-        Log.info("Fetching all orders for user: " + userId);
-        return orderRepo.findUserById(userId);
-    }
+public List<Order> getOrdersByUserId(@PathVariable String userId) {
+    Log.info("Fetching all orders for user: " + userId);
+    return orderRepo.findByUserId(userId); // <-- updated method name
+}
+
     
     
     @GetMapping("/{orderId}")
