@@ -1,12 +1,10 @@
-
 package com.bootA.ecom_server.repos;
-import java.util.*;
-import org.*;
+
+import java.util.Optional;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.bootA.ecom_server.models.User;
+import com.bootA.ecom_server.models.user;
 
-
-public interface UserRepo extends MongoRepository <org.springframework.boot.autoconfigure.security.SecurityProperties.User, String>{
-    Optional<org.springframework.boot.autoconfigure.security.SecurityProperties.User> findByEmail(String,email);
+public interface UserRepo extends MongoRepository<user, String> {
+    Optional<user> findByEmail(String email);
 }
