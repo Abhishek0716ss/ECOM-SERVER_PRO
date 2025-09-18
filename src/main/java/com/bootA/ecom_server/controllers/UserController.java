@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.bootA.ecom_server.exceptions.ResourceNotFoundException;
+import com.bootA.ecom_server.exception.ResourceNotFoundException;
 import com.bootA.ecom_server.models.user;
 import com.bootA.ecom_server.repos.UserRepo;
 
