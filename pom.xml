@@ -50,7 +50,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+	
+   <dependency>
+     <groupId>io.github.zxgangandy</groupId>
+     <artifactId>exchange-order-base</artifactId>
+     <version>1.0.2</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<plugins>
